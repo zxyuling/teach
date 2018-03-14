@@ -1,0 +1,89 @@
+img
+{
+	width: 300px;
+	height: 300px;
+	border-radius:50%;
+	position: relative;
+	left: 10px;
+	top: 10px;
+}
+.task2
+{
+	position: relative;
+	width: 300px;
+	height: 300px;
+}
+.trans
+{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	border-radius:50%;
+	border: 10px solid;
+	border-right-color: #f60;
+	border-bottom-color: #f60;
+	transition:all 0.5s ease-in;
+}
+
+.message
+{
+	width: 300px;
+	height: 100px;
+	text-align: center;
+	padding: 100px 0px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	border-radius:50%;
+	border:10px solid;
+	background: rgba(0,0,0,0);
+	color: rgba(0,0,0,0);
+	transition:all 0.5s ease-in;
+}
+
+.task2:hover .message
+{
+	background: rgba(0,0,0,0.5);
+	color: rgba(255,255,255,1);
+}
+
+.task2:hover .trans
+{
+	transform:rotate(180deg); 
+}
+
+.task3
+{
+	padding: 50px;
+	width: 600px;
+	height: 400px;
+
+
+}
+.line-num
+{
+	float: left;
+	width: 50px;
+	height: 300px;
+	border:solid 1px #4682b4 ;
+	background:linear-gradient(to top, #4682b4, #4682b4 1px, transparent 1px);
+	background-size:100% 30px;
+	line-height: 30px;
+
+}
+.note
+{
+	overflow: auto;
+	float: left;
+	width: 500px;
+	height: 300px;
+	outline:none;
+	border:1px solid #4682b4;
+	background:linear-gradient(to top, #4682b4 1px, transparent 2px);
+	background-size:100% 30px;
+	line-height: 30px;
+
+}

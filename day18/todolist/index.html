@@ -1,0 +1,45 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<style>
+			a
+			{
+				cursor:pointer;
+				color: red;
+			}
+		</style>
+	</head>
+	<script src="http://apps.bdimg.com/libs/angular.js/1.4.6/angular.min.js"></script>
+	<body  ng-app="input" ng-controller="inputCtrl">
+		<header>
+			<section>
+				<form>
+					<label for="title">ToDoList</label>
+					<input type="text" id="title" name="title" placeholder="添加ToDo" ng-model="value"/>
+					<input  class="add" type="submit" value="add" ng-click="add()">
+				</form>
+			</section>
+		</header>
+		<section>
+			<h2 onclick="save()">正在进行</h2>
+			<ol id="todolist" class="demo-box">
+				<li data-ng-repeat="event in doingEvents track by $index">
+					<a class="select" ng-click="done($index)"/>完成</a>
+					<span>{{event}}</span>
+					<a ng-click="doingDel($index)">删除</a>
+				</li>
+			</ol>
+			<h2>已经完成</h2>
+			<ul id="donelist">
+				<li data-ng-repeat="event in doneEvents track by $index" >
+					<a ng-click ="doing($index)" checked="checked"/>未完成</a>
+					<span>{{event}}</span>
+					<a ng-click="doneDel($index)">删除</a>
+				</li>
+			</ul>
+		</section>
+		<script type="text/javascript" src="controller.js"></script>
+	</body>
+</html>

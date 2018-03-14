@@ -1,0 +1,37 @@
+div:nth-child(1)
+{
+  	position:absolute;
+   	top:50%;  
+   	left:50%;  
+  	margin-top:-250px; 
+	margin-left:-50px; 
+	display: block;
+	background: #999;
+	width: 100px;
+	height: 500px;
+}
+
+div:nth-child(2)
+{
+	position:absolute;
+   	top:50%;  
+   	left:50%;  
+  	margin-top:-50px; 
+	margin-left:-250px; 
+	display: block;
+	background: #999;
+	width: 250px;
+	height: 100px;
+}
+
+div:nth-child(3)
+{
+	position:absolute;
+   	top:50%;  
+   	left:50%;  
+  	margin-top:-50px; 
+	display: block;
+	background: #999;
+	width: 250px;
+	height: 100px;
+}

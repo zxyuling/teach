@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<script>
+	function add() {
+    var result = 0;
+    var i=0;
+    for(i;i<arguments.length;i++)
+    	result += arguments[i]; 
+    return result;
+}
+
+console.log(add(1,2));
+console.log(add(1,2,3));
+console.log(add(1,2,3,4,5));
+/**************************************************************/
+var result = [];
+var copyArray = function() {
+    for(var i = 0; i < 3; i++) 
+    {
+
+       	  		result[i]=function(t){
+       	  			return function(){
+       	  				console.log(t)}
+       	  		}(i)
+    }
+}
+copyArray();
+
+for(var i=0;i<3;i++)
+result[i]();
+
+</script>
+<body>
+	
+</body>
+</html>

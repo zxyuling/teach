@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Js计时器</title>
+		<script src="./sea.js"></script>
+	<script>
+	seajs.use('./m');
+	</script>
+	<script type="text/javascript">
+		var timer = 
+	{
+		pauseDate:0,
+		startDate:0,
+		time:0,
+		state:0,
+		start:start,
+		pause:pause,
+		reset:reset,
+		getDuration:getDuration,
+	};
+	function start()
+	{
+		if(this.state == 0)
+		{
+			var date = new Date();
+			this.state = 1;
+			this.startDate = date.getTime();
+			// then.setTime(then.getTime() - this.time);
+		}
+		else
+		{
+			this.state = 1;
+			console.log('暂停开始：'+this.pauseDate+'===================系统计时开始'+t.start());
+			var date = new Date();
+			this.startDate = date.getTime();
+		}
+		console.log('真正开始：'+this.startDate+'===================系统计时开始'+t.start());
+	}
+	function pause()
+	{
+		if(this.state == 1)
+		{
+			this.state = 2;
+			var date = new Date();
+			this.pauseDate = date.getTime();
+			this.time += (this.pauseDate - this.startDate);
+			console.log('计时暂停：'+this.pauseDate+'===================系统计时暂停'+t.pasue());
+		}
+		else
+		{
+			console.log('计时未开始');
+		}
+	}
+	function reset()
+	{
+		this.state = 0;
+		this.time = 0;
+		this.startDate = 0;
+		this.pauseDate = 0;
+		console.log('重新计时');
+	}
+	function getDuration()
+	{
+		this.pause();
+		var t = this.time;
+		this.reset();
+		console.log(t)
+
+	}
+	</script>
+</head>
+<body>
+	
+</body>
+</html>

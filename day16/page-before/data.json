@@ -1,0 +1,46 @@
+//主页链接
+var index =
+{
+    "index_url": "测试内容d99n"
+}
+//表单数据
+var form = 
+{
+    "action": "测试内容3nyf"
+}
+//代账数据
+var daizhang = 
+{
+    "daizhang_url": "测试内容v3z5"
+}
+//开公司数据
+var company = 
+{
+    "company_url": "测试内容8kj6"
+}
+//页面底部链接
+var footer = 
+{
+    "about": "测试内容5112",
+    "help": "测试内容5zjk",
+    "mobile": "测试内容h644",
+    "tel": "测试内容e24w",
+    "weibo": "测试内容q485",
+    "weixin": "测试内容ic99",
+    "zizhi": "测试内容2f98"
+}
+//媒体报告
+var media = 
+{
+    "media_content": "测试内容e45b",
+    "media_img": "测试内容1q22",
+    "media_title": "测试内容128m",
+    "meidia_time": "测试内容62yj"
+}
+// 动态数据
+ var trends = 
+ {
+    "trends_content": "测试内容gjgk",
+    "trends_name": "测试内容w1l5",
+    "trends_time": "测试内容3ovs"
+}
